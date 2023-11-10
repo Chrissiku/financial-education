@@ -12,7 +12,12 @@ import Themes from "../shared/Themes";
 const BankMain = () => {
   return (
     <View style={styles.container}>
-      <ScrollView style={{ flex: 1, backgroundColor: Themes.background }}>
+      <ScrollView
+        style={{
+          flex: 1,
+          backgroundColor: Themes.background,
+        }}
+      >
         <View style={styles.content}>
           {/* Header */}
           <View
@@ -128,7 +133,13 @@ const BankMain = () => {
           </View>
 
           {/* Card */}
-          <View style={{ marginTop: 20 }}>
+          <View
+            style={{
+              marginTop: 20,
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
             <View style={styles.card}>
               {/* Card Logo and Header */}
               <View
@@ -268,6 +279,7 @@ const styles = StyleSheet.create({
     borderColor: "#ccc",
     padding: 10,
     borderRadius: 10, // Border radius for the card
+    width: "70%",
   },
   slideIndicator: {
     width: 10,
