@@ -5,7 +5,6 @@ import BankMain from "./src/Screens/BankMain";
 export default function App() {
   return (
     <View style={{ flex: 1 }}>
-      {/* <Text>test code</Text> */}
       <BankMain />
     </View>
   );
