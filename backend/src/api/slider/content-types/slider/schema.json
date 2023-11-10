@@ -22,8 +22,7 @@
         "audios"
       ],
       "type": "media",
-      "multiple": false,
-      "required": true
+      "multiple": false
     }
   }
 }

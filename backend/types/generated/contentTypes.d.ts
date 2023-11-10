@@ -374,7 +374,7 @@ export interface ApiSliderSlider extends Schema.CollectionType {
   };
   attributes: {
     name: Attribute.String;
-    image: Attribute.Media & Attribute.Required;
+    image: Attribute.Media;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
