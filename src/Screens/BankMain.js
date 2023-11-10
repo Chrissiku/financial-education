@@ -4,8 +4,8 @@ import { MaterialIcons } from '@expo/vector-icons'; // Import MaterialIcons
 
 const BankMain = () => {
   return (
-    <View style={styles.container}>
-      <ScrollView style={{ flex: 1, backgroundColor: 'rgb(32, 44, 51)' }}>
+    <View style={[styles.container, { backgroundColor: 'white' }]}>
+    <ScrollView style={{ flex: 1, backgroundColor: 'rgb(32, 44, 51)' }}>
         <View style={styles.content}>
           {/* Header */}
           <View style={[styles.header, { justifyContent: 'center', alignItems: 'center' }]}>
