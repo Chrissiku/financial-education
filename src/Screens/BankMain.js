@@ -6,7 +6,7 @@ import {
   ScrollView,
 } from "react-native";
 import React from "react";
-import { MaterialIcons } from "@expo/vector-icons"; // Import MaterialIcons
+import { MaterialCommunityIcons } from "@expo/vector-icons"; // Import MaterialCommunityIcons
 import Themes from "../shared/Themes";
 
 const BankMain = () => {
@@ -21,47 +21,55 @@ const BankMain = () => {
               { justifyContent: "center", alignItems: "center" },
             ]}
           >
-            <Text style={{ fontSize: 20, color: Themes.black }}>Account</Text>
+            <Text style={{ fontSize: 20, color: Themes.white }}>Account</Text>
           </View>
 
           {/* Icon Buttons */}
           <View style={styles.iconButtonContainer}>
             <TouchableOpacity style={styles.iconButton}>
-              <MaterialIcons
-                name="attach-money"
+              <MaterialCommunityIcons
+                name="bank-plus"
                 size={25}
-                color={Themes.black}
+                color={Themes.white}
               />
               <Text
-                style={{ color: Themes.black, fontSize: 12, fontWeight: "200" }}
+                style={{ color: Themes.white, fontSize: 12, fontWeight: "200" }}
               >
                 Top Up
               </Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.iconButton}>
-              <MaterialIcons
-                name="swap-horizontal-circle"
+              <MaterialCommunityIcons
+                name="swap-horizontal-bold"
                 size={25}
-                color={Themes.black}
+                color={Themes.white}
               />
               <Text
-                style={{ color: Themes.black, fontSize: 12, fontWeight: "200" }}
+                style={{ color: Themes.white, fontSize: 12, fontWeight: "200" }}
               >
                 Transfer
               </Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.iconButton}>
-              <MaterialIcons name="ac-unit" size={25} color={Themes.black} />
+              <MaterialCommunityIcons
+                name="snowflake"
+                size={25}
+                color={Themes.white}
+              />
               <Text
-                style={{ color: Themes.black, fontSize: 12, fontWeight: "200" }}
+                style={{ color: Themes.white, fontSize: 12, fontWeight: "200" }}
               >
                 Freeze
               </Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.iconButton}>
-              <MaterialIcons name="calculate" size={25} color={Themes.black} />
+              <MaterialCommunityIcons
+                name="calculator-variant"
+                size={25}
+                color={Themes.white}
+              />
               <Text
-                style={{ color: Themes.black, fontSize: 10, fontWeight: "200" }}
+                style={{ color: Themes.white, fontSize: 10, fontWeight: "200" }}
               >
                 Calculator
               </Text>
@@ -70,37 +78,49 @@ const BankMain = () => {
 
           <View style={styles.iconButtonContainer}>
             <TouchableOpacity style={styles.iconButton}>
-              <MaterialIcons
-                name="description"
+              <MaterialCommunityIcons
+                name="file-document-outline"
                 size={25}
-                color={Themes.black}
+                color={Themes.white}
               />
               <Text
-                style={{ color: Themes.black, fontSize: 12, fontWeight: "200" }}
+                style={{ color: Themes.white, fontSize: 12, fontWeight: "200" }}
               >
                 Reports
               </Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.iconButton}>
-              <MaterialIcons name="school" size={25} color={Themes.black} />
+              <MaterialCommunityIcons
+                name="school-outline"
+                size={25}
+                color={Themes.white}
+              />
               <Text
-                style={{ color: Themes.black, fontSize: 11, fontWeight: "200" }}
+                style={{ color: Themes.white, fontSize: 11, fontWeight: "200" }}
               >
                 Education
               </Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.iconButton}>
-              <MaterialIcons name="android" size={25} color={Themes.black} />
+              <MaterialCommunityIcons
+                name="robot"
+                size={25}
+                color={Themes.white}
+              />
               <Text
-                style={{ color: Themes.black, fontSize: 12, fontWeight: "200" }}
+                style={{ color: Themes.white, fontSize: 12, fontWeight: "200" }}
               >
                 ChatBot
               </Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.iconButton}>
-              <MaterialIcons name="info" size={25} color={Themes.black} />
+              <MaterialCommunityIcons
+                name="information-outline"
+                size={25}
+                color={Themes.white}
+              />
               <Text
-                style={{ color: Themes.black, fontSize: 12, fontWeight: "200" }}
+                style={{ color: Themes.white, fontSize: 12, fontWeight: "200" }}
               >
                 Details
               </Text>
@@ -177,26 +197,38 @@ const BankMain = () => {
       {/* Bottom Buttons */}
       <View style={styles.bottomButtons}>
         <TouchableOpacity style={styles.bottomButton}>
-          <MaterialIcons
-            name="account-balance"
+          <MaterialCommunityIcons
+            name="bank-outline"
             size={22}
             color={Themes.black}
           />
           <Text style={{ color: "#333" }}>Accounts</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.bottomButton}>
-          <MaterialIcons name="pie-chart" size={22} color={Themes.black} />
+          <MaterialCommunityIcons
+            name="chart-pie"
+            size={22}
+            color={Themes.black}
+          />
           <Text style={{ color: "#333" }}>Spending</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.bottomButton}>
-          <MaterialIcons name="add" size={22} color={Themes.black} />
+          <MaterialCommunityIcons name="plus" size={22} color={Themes.black} />
         </TouchableOpacity>
         <TouchableOpacity style={styles.bottomButton}>
-          <MaterialIcons name="mail" size={22} color={Themes.black} />
+          <MaterialCommunityIcons
+            name="email-outline"
+            size={22}
+            color={Themes.black}
+          />
           <Text style={{ color: "#333" }}>Messages</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.bottomButton}>
-          <MaterialIcons name="android" size={22} color={Themes.black} />
+          <MaterialCommunityIcons
+            name="human-greeting"
+            size={22}
+            color={Themes.black}
+          />
           <Text style={{ color: "#333" }}>MoMoMate</Text>
         </TouchableOpacity>
       </View>
@@ -224,14 +256,14 @@ const styles = StyleSheet.create({
     flex: 1,
     marginRight: 10,
     alignItems: "center",
-    backgroundColor: "rgba(255, 255, 255, 0.2)", // Semi-transparent black background
-    borderColor: Themes.black, // black border color
+    //backgroundColor: "rgba(255, 255, 255, 0.2)", // Semi-transparent black background
+    borderColor: Themes.white, // black border color
     borderWidth: 1, // Border width
     borderRadius: 0, // No border radius
     padding: 10,
   },
   card: {
-    backgroundColor: Themes.primary, // Background color for the card
+    backgroundColor: Themes.card, // Background color for the card
     borderWidth: 1,
     borderColor: "#ccc",
     padding: 10,

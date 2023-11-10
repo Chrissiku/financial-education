@@ -1,6 +1,7 @@
 export default {
-  primary: "rgb(57, 138, 219)",
+  card: "#f0f0f0",
   white: "#fff",
   black: "#000",
-  background: "#fff",
+  background: '#000',
+  icon : "fff",
 };
