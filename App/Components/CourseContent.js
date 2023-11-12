@@ -9,9 +9,9 @@ import { useNavigation } from "@react-navigation/native";
 export default function CourseContent({ course, userProgress, courseType }) {
   const navigation = useNavigation();
 
-  useEffect(() => {
-    console.log("userProgress", userProgress);
-  });
+  // useEffect(() => {
+  //   console.log("userProgress", userProgress);
+  // });
 
   const checkUserProgress = (contentId) => {
     return userProgress.find((item) => item.courseContentId == contentId);
